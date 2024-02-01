@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Hirevac</title>
+ 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- Material Icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    
+  <!-- bootstrap core css -->
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+<!--toastify-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="hero_area3">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" >
+              <span id="compraVendeSpan">
+                Compra y Vende
+              </span>
+              <span id="nombreUsuarioSpan"></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ms-auto">
+                 </li>
+                 <li class="nav-item iniciado">
+                  <a class="nav-link " href="envios.html" >
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>
+                      Envios
+                    </span>
+                  </a>
+                </li>
+                    <li class="nav-item iniciado">
+                      <a class="nav-link " href="inicioMenu.html" >
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>
+                          Mercado
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item iniciado">
+                      <a class="nav-link " href="#" id="salir">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>
+                          Salir
+                        </span>
+                      </a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      </div>
+      <div class="cover_profile_section">
+        <div class="cover_photo" id="coverPhoto">
+          <img id="coverImage"  alt="Foto de Portada">
+        </div>
+        <div class="profile_photo" id="profilePhoto">
+          <img id="profileImage"  alt="Foto de Perfil">
+        </div>
+      </div>
+
+  <!-- Sección del Menú de Categorías -->
+
+      
+
+  <button href="articulo.html" id="publicarArticulo" class="editar-perfil-btn" style="display: none;">
+    Publicar Articulo
+  </button>
+  
+  <div class="categorias">
+  
+    
+    <select id="categorias">
+      <option value="todas">Todas las categorías</option>
+      <!-- Opciones de categorías se agregarán dinámicamente aquí -->
+    </select>
+  
+    <!-- Muestra el número de teléfono al lado del select -->
+    <div id="telefonoContainer" class="telefono-container"></div>
+  </div>
+  
+  <div id="articulosUsuario" class="articulosUsuario"></div>
+  
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <script type="module" src="./app/salir.js"></script>
+  <script type="module" src="./app/scrollCategories.js"></script>
+  <script type="module" defer src="./app/perfil.js"></script>
+  <script type="module" src="./app/firebase.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
